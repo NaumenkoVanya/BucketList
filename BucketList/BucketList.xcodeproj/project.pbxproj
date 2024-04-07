@@ -15,6 +15,9 @@
 		CA9C8B372BC30A2200FF4A41 /* SwitchingViewStatesWithEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B362BC30A2200FF4A41 /* SwitchingViewStatesWithEnums.swift */; };
 		CA9C8B392BC30DB200FF4A41 /* MapKitCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B382BC30DB200FF4A41 /* MapKitCV.swift */; };
 		CA9C8B3B2BC3188200FF4A41 /* TouchIDFaceIDCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B3A2BC3188200FF4A41 /* TouchIDFaceIDCV.swift */; };
+		CA9C8B3D2BC31EE500FF4A41 /* AddingUserLocationsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B3C2BC31EE500FF4A41 /* AddingUserLocationsMap.swift */; };
+		CA9C8B3F2BC3253800FF4A41 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B3E2BC3253800FF4A41 /* Location.swift */; };
+		CA9C8B412BC3336900FF4A41 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B402BC3336900FF4A41 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		CA9C8B362BC30A2200FF4A41 /* SwitchingViewStatesWithEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewStatesWithEnums.swift; sourceTree = "<group>"; };
 		CA9C8B382BC30DB200FF4A41 /* MapKitCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitCV.swift; sourceTree = "<group>"; };
 		CA9C8B3A2BC3188200FF4A41 /* TouchIDFaceIDCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDFaceIDCV.swift; sourceTree = "<group>"; };
+		CA9C8B3C2BC31EE500FF4A41 /* AddingUserLocationsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingUserLocationsMap.swift; sourceTree = "<group>"; };
+		CA9C8B3E2BC3253800FF4A41 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CA9C8B402BC3336900FF4A41 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 			children = (
 				CA9C8B262BC2AA4A00FF4A41 /* BucketListApp.swift */,
 				CA9C8B282BC2AA4A00FF4A41 /* ContentView.swift */,
+				CA9C8B3C2BC31EE500FF4A41 /* AddingUserLocationsMap.swift */,
+				CA9C8B402BC3336900FF4A41 /* EditView.swift */,
+				CA9C8B3E2BC3253800FF4A41 /* Location.swift */,
 				CA9C8B2A2BC2AA4C00FF4A41 /* Assets.xcassets */,
 				CA9C8B2C2BC2AA4C00FF4A41 /* Preview Content */,
 				CA9C8B342BC2AC2900FF4A41 /* AddingConformanceComparable.swift */,
@@ -150,8 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9C8B372BC30A2200FF4A41 /* SwitchingViewStatesWithEnums.swift in Sources */,
+				CA9C8B3D2BC31EE500FF4A41 /* AddingUserLocationsMap.swift in Sources */,
+				CA9C8B3F2BC3253800FF4A41 /* Location.swift in Sources */,
 				CA9C8B352BC2AC2900FF4A41 /* AddingConformanceComparable.swift in Sources */,
 				CA9C8B292BC2AA4A00FF4A41 /* ContentView.swift in Sources */,
+				CA9C8B412BC3336900FF4A41 /* EditView.swift in Sources */,
 				CA9C8B392BC30DB200FF4A41 /* MapKitCV.swift in Sources */,
 				CA9C8B272BC2AA4A00FF4A41 /* BucketListApp.swift in Sources */,
 				CA9C8B3B2BC3188200FF4A41 /* TouchIDFaceIDCV.swift in Sources */,
