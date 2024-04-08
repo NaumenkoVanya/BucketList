@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA543AE62BC3F4FC00692A44 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA543AE52BC3F4FC00692A44 /* ContentView-ViewModel.swift */; };
 		CA9C8B272BC2AA4A00FF4A41 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B262BC2AA4A00FF4A41 /* BucketListApp.swift */; };
 		CA9C8B292BC2AA4A00FF4A41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C8B282BC2AA4A00FF4A41 /* ContentView.swift */; };
 		CA9C8B2B2BC2AA4C00FF4A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9C8B2A2BC2AA4C00FF4A41 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA543AE52BC3F4FC00692A44 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		CA9C8B232BC2AA4A00FF4A41 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9C8B262BC2AA4A00FF4A41 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		CA9C8B282BC2AA4A00FF4A41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				CA9C8B262BC2AA4A00FF4A41 /* BucketListApp.swift */,
 				CA9C8B282BC2AA4A00FF4A41 /* ContentView.swift */,
 				CA9C8B3C2BC31EE500FF4A41 /* AddingUserLocationsMap.swift */,
+				CA543AE52BC3F4FC00692A44 /* ContentView-ViewModel.swift */,
 				CA9C8B422BC33A8A00FF4A41 /* Result.swift */,
 				CA9C8B402BC3336900FF4A41 /* EditView.swift */,
 				CA9C8B3E2BC3253800FF4A41 /* Location.swift */,
@@ -168,6 +171,7 @@
 				CA9C8B292BC2AA4A00FF4A41 /* ContentView.swift in Sources */,
 				CA9C8B412BC3336900FF4A41 /* EditView.swift in Sources */,
 				CA9C8B432BC33A8A00FF4A41 /* Result.swift in Sources */,
+				CA543AE62BC3F4FC00692A44 /* ContentView-ViewModel.swift in Sources */,
 				CA9C8B392BC30DB200FF4A41 /* MapKitCV.swift in Sources */,
 				CA9C8B272BC2AA4A00FF4A41 /* BucketListApp.swift in Sources */,
 				CA9C8B3B2BC3188200FF4A41 /* TouchIDFaceIDCV.swift in Sources */,

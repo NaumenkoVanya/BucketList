@@ -11,7 +11,8 @@ import SwiftUI
 struct BucketListApp: App {
     var body: some Scene {
         WindowGroup {
-            TouchIDFaceIDCV()
+            AddingUserLocationsMap()
+//            TouchIDFaceIDCV()
 //            ContentView()
         }
     }

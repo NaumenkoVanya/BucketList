@@ -13,43 +13,45 @@ struct AddingUserLocationsMap: View {
         MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: 56, longitude: -3),
             span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)))
-    
-    @State private var locations = [LocationOne]()
-    @State private var selectedPlace: LocationOne?
+    @State private var viewModel = ViewModel()
 
     var body: some View {
-        MapReader { proxy in
-            Map(initialPosition: startPosition){
-                ForEach(locations){ location in
-                    Annotation(location.name, coordinate: location.coordinate) {
-                        Image(systemName: "star.circle")
-                            .resizable()
-                            .foregroundStyle(.red)
-                            .frame(width: 44, height: 44)
-                            .background(.white)
-                            .clipShape(.circle)
-                            .onLongPressGesture{
-                                selectedPlace = location
-                            }
+        if viewModel.isUnlocked {
+            MapReader { proxy in
+                Map(initialPosition: startPosition) {
+                    ForEach(viewModel.locations) { location in
+                        Annotation(location.name, coordinate: location.coordinate) {
+                            Image(systemName: "star.circle")
+                                .resizable()
+                                .foregroundStyle(.red)
+                                .frame(width: 44, height: 44)
+                                .background(.white)
+                                .clipShape(.circle)
+                                .onLongPressGesture {
+                                    viewModel.selectedPlace = location
+                                }
+                        }
+                        //                    Marker(location.name, coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
                     }
-//                    Marker(location.name, coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
                 }
-            }
                 .onTapGesture { position in
                     if let coordinate = proxy.convert(position, from: .local) {
-                        let newLocation = LocationOne(id: UUID(), name: "New location", description: "", latitude: coordinate.latitude, longitude: coordinate.longitude)
-                        locations.append(newLocation)
+                        viewModel.addLocation(at: coordinate)
                     }
                 }
-                .sheet(item: $selectedPlace) { place in
-                    EditView(location: place) { newLocation in
-                        if let index = locations.firstIndex(of: place) {
-                            locations[index] = newLocation
-                        }
+                .sheet(item: $viewModel.selectedPlace) { place in
+                    EditView(location: place) {
+                        viewModel.update(location: $0)
                     }
                 }
+            }
+        } else {
+            Button("Unlock Plase", action: viewModel.authenticate)
+                .padding()
+                .background(.blue)
+                .foregroundStyle(.white)
+                .clipShape(.capsule)
         }
-        
     }
 }
 
